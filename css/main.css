@@ -12,6 +12,10 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+
+  position: absolute;
+  left: 19%;
+  top: 6em;
 }
 
 .polaroid > img {
@@ -22,4 +26,28 @@ html {
 .polaroid > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+
+  position: absolute;
+  left: 36%;
+  top: 75%;
+}
+
+.polaroid:first-child {
+  transform: rotate(-15deg);
+  position: absolute;
+}
+
+.polaroid:nth-child(2) {
+  transform: rotate(5deg);
+  position: absolute;
+  z-index: 100;
+  left: 29%;
+  top: 160px;
+}
+
+.polaroid:last-child {
+  transform: rotate(18deg);
+  position: absolute;
+  left: 41%;
+  top: 76px;
 }
